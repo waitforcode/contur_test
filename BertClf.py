@@ -32,8 +32,6 @@ class BertClf(nn.Module):
         # output layer
         x = self.fc2(x)
         # apply softmax activation
-        x = self.act(x)
-        # dense_out = self.fc(self.dropout(cls))
         outputs = self.act(x)
 
         return outputs
